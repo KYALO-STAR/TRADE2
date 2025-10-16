@@ -375,3 +375,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 Made with ❤️ by the Trading Platform Team
 
 </div>
+#   T r a d i n g   A p p   -   L i v e   o n   V e r c e l  
+ 

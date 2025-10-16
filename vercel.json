@@ -2,11 +2,5 @@
   "buildCommand": "npm run build",
   "outputDirectory": ".next",
   "framework": "nextjs",
-  "installCommand": "npm install",
-  "env": {
-    "DERIV_APP_ID": "@deriv_app_id",
-    "DERIV_API_URL": "@deriv_api_url",
-    "NEXTAUTH_SECRET": "@nextauth_secret",
-    "NEXTAUTH_URL": "@nextauth_url"
-  }
+  "installCommand": "npm install"
 }

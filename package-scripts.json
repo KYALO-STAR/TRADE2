@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "build:analyze": "ANALYZE=true npm run build",
+    "db:migrate": "node scripts/migrate.js",
+    "db:seed": "node scripts/seed.js",
+    "health": "node scripts/health-check.js",
+    "docker:build": "docker build -t trading-app .",
+    "docker:run": "docker run -p 3000:3000 trading-app",
+    "deploy:staging": "npm run build && npm run docker:build",
+    "deploy:production": "npm run build && docker-compose -f docker-compose.prod.yml up -d"
+  }
+}

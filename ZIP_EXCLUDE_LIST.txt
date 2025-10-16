@@ -1,0 +1,47 @@
+# Files and folders to EXCLUDE when zipping this project
+
+## Large Dependencies (Recipients will install these)
+node_modules/
+.next/
+out/
+dist/
+build/
+
+## Environment Files (Contains secrets)
+.env.local
+.env.production
+.env.development
+.env
+
+## OS and Editor Files
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
+*.swp
+*.swo
+
+## Cache and Temp Files
+.cache/
+*.tsbuildinfo
+.eslintcache
+coverage/
+.nyc_output/
+
+## Git Files (Optional - exclude if recipient doesn't need git history)
+.git/
+.gitignore
+
+## Docker Volumes (If using Docker)
+postgres_data/
+redis_data/
+
+---
+## ✅ INCLUDE THESE:
+- All source code (src/)
+- Configuration files (*.config.js, *.json)
+- Documentation (*.md files)
+- Public assets (public/)
+- Environment examples (.env.production.example)
+- Docker configuration (docker-compose.yml, Dockerfile)

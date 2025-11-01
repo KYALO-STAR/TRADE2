@@ -6,13 +6,15 @@ import { BotUploader } from '@/components/bots/BotUploader'
 import { BotStrategies } from '@/components/bots/BotStrategies'
 import { BotPerformance } from '@/components/bots/BotPerformance'
 import { RunningBots } from '@/components/bots/RunningBots'
-import { Bot, Upload, Activity, Settings } from 'lucide-react'
+import { VisualBotEditor } from '@/components/bots/VisualBotEditor'
+import { Bot, Upload, Activity, Settings, Zap } from 'lucide-react'
 import Header from '@/components/layout/Header'
 
 export default function BotsPage() {
-  const [activeTab, setActiveTab] = useState('strategies')
+  const [activeTab, setActiveTab] = useState('visual-editor')
 
   const tabs = [
+    { id: 'visual-editor', label: 'Visual Editor', icon: Zap },
     { id: 'strategies', label: 'Bot Strategies', icon: Bot },
     { id: 'upload', label: 'Upload Bot', icon: Upload },
     { id: 'running', label: 'Running Bots', icon: Activity },
@@ -59,6 +61,7 @@ export default function BotsPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3 }}
         >
+          {activeTab === 'visual-editor' && <VisualBotEditor />}
           {activeTab === 'strategies' && <BotStrategies />}
           {activeTab === 'upload' && <BotUploader />}
           {activeTab === 'running' && <RunningBots />}

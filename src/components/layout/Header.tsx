@@ -16,7 +16,8 @@ import {
   BarChart3,
   Command,
   Eye,
-  Home
+  Home,
+  Zap
 } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 import SACCOToggle from './SACCOToggle'
@@ -84,6 +85,7 @@ export default function Header() {
     { href: '/dashboard', label: 'Trading', icon: TrendingUp },
     { href: '/synthetics', label: 'Trade', icon: BarChart3 },
     { href: '/bots', label: 'Bots', icon: Bot },
+    { href: '/bot-editor', label: 'Bot Builder', icon: Zap },
     { href: '/market-analysis', label: 'Analysis', icon: Eye },
   ]
 
